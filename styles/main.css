@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+    line-height: 1.5;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgb(238, 238, 238);
+}
+
+.container-logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-GymFy {
+    display: flex;
+    align-items: center;
+    width: 60px;
+}
+
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 400;
+}
+
+.button {
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.button-outline {
+    border: 1px solid #949494;
+    color: #000;
+}
+
+.button-dark {
+    background-color: #1f2937;
+    color: white;
+}
+
+.hero {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.author-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.heading {
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+}
+
+.subheading {
+    font-size: 1.25rem;
+    color: #000000;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+}
+
+.container-botones {
+    box-sizing: border-box;
+}
+
+.cta-button {
+    width: 220px;
+    color: white;
+    background-color: #000000;
+    padding: 1rem 2rem;
+    border-radius: 9999px;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.cta-button:hover {
+    border: 2px solid #000; /* Borde negro en hover */
+    box-shadow: 0 8px 15px rgba(255, 119, 0, 0.628); /* Sombra en hover */
+    transform: translateY(-5px); /* "Saltito" hacia arriba */
+}
+
+.timeline {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 2rem;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 56%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #e5e7eb;
+    z-index: 1;
+}
+
+.timeline-item {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.timeline-icon {
+    width: 150px;
+    height: 150px;
+    background: white;
+    border-radius: 50%;
+    padding: 1rem;
+    border: 2px solid #e5e7eb;
+    margin-bottom: 1rem;
+}
+
+.timeline-content h3 {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.timeline-content p {
+    color: #4a5568;
+    font-size: 0.95rem;
+    max-width: 220px;
+    margin: 0 auto;
+    line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+    .timeline {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .timeline::before {
+        top: 0;
+        bottom: 0;
+        left: 30px;
+        width: 2px;
+        height: auto;
+    }
+
+    .timeline-item {
+        flex-direction: row;
+        text-align: left;
+        gap: 2rem;
+    }
+
+    .timeline-icon {
+        margin-bottom: 0;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .heading {
+        font-size: 2.5rem;
+    }
+    
+    .nav-links {
+        gap: 1rem;
+    }
+    
+    .navbar {
+        padding: 1rem;
+    }
+}
